@@ -62,12 +62,20 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How I debugged: 
+  sent request from client - saw 500 internal error, checked terminal where server was running found (
+NameError (uninitialized constant ToysController::Toys):
+app/controllers/toys_controller.rb:10:in `create'
+)
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  at test - end of json input , syntax error in-promis at toyCar js:21.
+  Patch controller method needed to return json
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  at test - 404 no route found.
+  added :destroy to config routes.rb resource
